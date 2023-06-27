@@ -24,38 +24,30 @@ limitations under the License.
 
 > Create an iterator for generating pseudorandom numbers drawn from a standard normal distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-iter-randn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterator = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randn@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterator = require( 'path/to/vendor/umd/random-iter-randn/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randn@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterator;
-})();
-</script>
+var iterator = require( '@stdlib/random-iter-randn' );
 ```
 
 #### iterator( \[options] )
@@ -219,13 +211,8 @@ The returned iterator protocol-compliant object has the following properties:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randn@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterator = require( '@stdlib/random-iter-randn' );
 
 var it;
 var r;
@@ -244,11 +231,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -263,7 +245,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/random/base/randn`][@stdlib/random/base/randn]</span><span class="delimiter">: </span><span class="description">standard normal pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random-base/randn`][@stdlib/random/base/randn]</span><span class="delimiter">: </span><span class="description">standard normal pseudorandom numbers.</span>
 
 </section>
 
@@ -322,7 +304,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -338,15 +320,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-iter-randn/main/LICENSE
 
-[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat/tree/umd
+[@stdlib/random/base/improved-ziggurat]: https://github.com/stdlib-js/random-base-improved-ziggurat
 
-[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller/tree/umd
+[@stdlib/random/base/box-muller]: https://github.com/stdlib-js/random-base-box-muller
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/randn]: https://github.com/stdlib-js/random-base-randn/tree/umd
+[@stdlib/random/base/randn]: https://github.com/stdlib-js/random-base-randn
 
 <!-- </related-links> -->
 
